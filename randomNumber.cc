@@ -31,7 +31,7 @@ int main(int argc, char const *argv[]) {
     cin >> search;
 
     if(arraySearch(randomNumbers, search, size) >= 0) {
-        cout << "Value " << search << " is located at position " << (arraySearch(randomNumbers, search, size) + 1) << endl;
+        cout << "Value " << search << " is located at position " << arraySearch(randomNumbers, search, size) << endl;
     }
     if(arraySearch(randomNumbers, search, size) == -1) {
         cout << "Error: Number does not appear within the array." << endl;
